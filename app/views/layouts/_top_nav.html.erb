@@ -26,6 +26,10 @@
           </ul>
         </li>
         <li><%= link_to "Sign up now!", signup_path, class: "text-danger" %></li>
+        <li><%= link_to "Log in!", login_path, class: "text-danger" %></li>
+        <li>
+          <%= link_to "Log out", logout_path, method: :delete %>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
        <li class="dropdown">

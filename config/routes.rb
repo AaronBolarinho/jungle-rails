@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
   get  '/signup',  to: 'users#new'
+  get  '/login',  to: 'sessions#new'
+  post  '/login',  to: 'products#index'
+  delete '/logout',  to: 'sessions#destroy'
 
   root to: 'products#index'
 
